@@ -1,0 +1,113 @@
+{% extends 'base_back.html.twig' %}
+{% block otherStyle %}
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
+
+	<style>
+		.boutons {
+			border-color: transparent;
+			background-color: transparent
+		}
+		.icon {
+			font-size: 24px;
+			color: #172D88
+		}
+		.icon:hover {
+			font-size: 24px;
+			color: red
+		}
+	</style>
+{% endblock %}
+
+{% block body %}
+	<div class="row flex-grow">
+		<div class="col-12 grid-margin stretch-card">
+			<div class="card card-rounded">
+				<div class="card-body">
+					<div class="d-sm-flex justify-content-between align-items-start">
+						<div>
+							<h4 class="card-title card-title-dash">Les Commandes</h4>
+							<p class="card-subtitle card-subtitle-dash">Total Commandes :
+								{# {{commande|length}}</p> #}
+						</div>
+						{% block boutonAdd %}
+							<div>
+								<a class="btn btn-primary text-white mb-0 me-0" href="{{path('commande_new', {'button_label': 'Update'}) }}">
+									<i class="mdi mdi-plus-circle-outline"></i>&nbsp;&nbsp;&nbsp;Ajouter une commande</a>
+							</div>
+						{% endblock %}
+					</div>
+					{# ************************************** Affichage ************************************* #}
+					{% block affichage %}
+						<div class="table-responsive  mt-1">
+							<table id="order-listing" class="table select-table" style="width:100%">
+								<thead>
+									<tr>
+										{# <th></th> #}
+										<th>Nom client</th>
+										<th>Description</th>
+										<th>Prix</th>
+										<th>Date Expiration</th>
+										<th></th>
+										{# <th>Status</th> #}
+									</tr>
+								</thead>
+								<tbody>
+									{% for com in commandes %}
+										<tr>
+											<td>
+												<div
+													class="d-flex ">
+													{# <img src="{{ asset ('BackOffice/images/faces/face1.jpg ')}}" alt=""> #}
+													<div>
+														<h6>{{ com.username }}</h6>
+														{# <p>20 sous chapitres</p> #}
+													</div>
+												</div>
+											</td>
+											<td>{{com.description}}</td>
+											<td>{{com.prix}}</td>
+                                            <td>{{com.dateExp | date('d-m-Y')}}</td>
+											<td style="text-align:center;">
+												<form method="post" action="{{ path('commande_edit', {'id': com.id}) }}">
+													<button class="boutons">
+														<i class='mdi mdi-pencil icon'></i>
+													</button>
+												</form>
+											</td>
+											<td style="text-align:center;">
+												<form method="post" action="{{ path('commande_delete', {'id': com.id}) }}" onsubmit="return confirm('Etes de vous sure de vouloir supprimer une commande ?');">
+													<input type="hidden" name="_token" value="{{ csrf_token('delete' ~ com.id) }}">
+													<button class="boutons">
+														<i class='mdi mdi-delete icon'></i>
+													</button>
+												</form>
+											</td>
+
+										</tr>
+
+									{% else %}
+										<tr>
+											<td colspan="5" style="text-align:center; font-size: 14px; font-weight:bold">Aucune commande trouvée !</td>
+										</tr>
+									{% endfor %}
+								</tbody>
+							</table>
+						</div>
+					{% endblock %}
+				</div>
+			</div>
+		</div>
+
+	</div>
+{% endblock %}
+{% block otherJS %}
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+	<script>
+		$(document).ready(function () {
+$('#order-listing').DataTable();
+});
+	</script>
+{% endblock %}

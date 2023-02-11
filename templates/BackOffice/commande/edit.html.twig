@@ -1,0 +1,42 @@
+{% extends 'BackOffice/commande/index.html.twig' %}
+{% block boutonAdd %}
+	<div>
+		<a class="btn btn-primary text-white mb-0 me-0" href="{{path('commande_index_back') }}">
+			<i class="mdi mdi-close-octagon"></i>&nbsp;&nbsp;&nbsp;Annuler</a>
+	</div>
+{% endblock %}
+{# ************************** Modifier ************************* #}
+{% block affichage %}
+	<div class="row flex-grow">
+		<div class="col-12 grid-margin stretch-card">
+			<div class="card card-rounded">
+				<div class="card-body">
+					<div>
+						<h4 class="card-title card-title-dash">Modifier une Commande</h4>
+						<p class="card-subtitle card-subtitle-dash">Veuillez remplir ces champs pour modifier une Commande</p>
+						{{ form_start(form,{'attr':{'novalidate':'novalidate'}}) }}
+						<tr>
+							<th class="m-0 font-weight-bold text-dark">{{ form_label(form.username, "Nom client") }}</th>
+							<th>{{ form_widget(form.username) }}</th>
+						</tr>
+                        <tr>
+							<th class="m-0 font-weight-bold text-dark">{{ form_label(form.description, "Description") }}</th>
+							<th>{{ form_widget(form.description) }}</th>
+						</tr>
+                        <tr>
+							<th class="m-0 font-weight-bold text-dark">{{ form_label(form.prix, "Prix") }}</th>
+							<th>{{ form_widget(form.prix) }}</th>
+						</tr>
+                        <tr>
+							<th class="m-0 font-weight-bold text-dark">{{ form_label(form.dateExp, "Date Expiration") }}</th>
+							<th>{{ form_widget(form.dateExp) }}</th>
+						</tr>
+						<br>
+						<button class="btn btn-primary text-white mb-0 me-0">{{ button_label|default('Enregistrer') }}</button>
+						{{ form_end(form) }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

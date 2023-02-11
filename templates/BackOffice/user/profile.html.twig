@@ -1,0 +1,107 @@
+{% extends 'base_back.html.twig' %}
+{% block otherStyle %}
+	<style>
+		.boutons {
+			border-color: transparent;
+			background-color: transparent
+		}
+		.icon {
+			font-size: 24px;
+			color: #172D88
+		}
+		.icon:hover {
+			font-size: 24px;
+			color: red
+		}
+	</style>
+{% endblock %}
+
+{% block body %}
+	<div class="row flex-grow">
+		<div class="col-12 grid-margin stretch-card">
+			<div class="card card-rounded">
+				<div class="card-body">
+					<div class="d-sm-flex justify-content-between align-items-start">
+						<div>
+							<h4 class="card-title card-title-dash">Mon Profil</h4>
+						</div>
+						{# {% block boutonAdd %}
+						<div>
+							<a id="displayButton" class="btn btn-primary text-white mb-0 me-0" href="{{path('app_user_new', {'button_label': 'Update'}) }}">
+								<i class="mdi mdi-plus-circle-outline"></i>&nbsp;&nbsp;&nbsp;Ajouter un utilisateur</a>
+						</div>
+						{% endblock %} #}
+					</div>
+					{# ************************************** Affichage ************************************* #}
+					<div class="table-responsive  mt-1">
+						<table class="table select-table">
+							<thead>
+								<tr>
+									{# <th></th> #}
+									<th>Nom utilisateur</th>
+									<th>Email</th>
+									
+									<th>Role</th>
+									<th>Date creation</th>
+									
+									<th></th>
+									{# <th>Status</th> #}
+								</tr>
+							</thead>
+							<tbody>
+								
+									<tr>
+										<td>
+											<div
+												class="d-flex ">
+												{# <img src="{{ asset ('BackOffice/images/faces/face1.jpg ')}}" alt=""> #}
+												<div>
+													<h6>{{ app.user.getUsername() }}</h6>
+													{# <p>20 sous chapitres</p> #}
+												</div>
+											</div>
+										</td>
+										<td>
+											<h6>{{ app.user.getEmail() }}</h6>
+										</td>
+										
+										<td>
+											<h6>{{ app.user.getRole() }}</h6>
+										</td>
+										<td>
+											<h6>{{ app.user.getDateCreation() | date('d-m-Y') }}</h6>
+										</td>
+										
+						
+										<td>
+											<form method="post" action="{{ path('app_user_edit_profile', {'id': app.user.getId()}) }}">
+												<button class="boutons">
+													<i class='mdi mdi-pencil icon'></i>
+												</button>
+											</form>
+											{# <form method="post" action="{{ path('app_user_delete', {'id': user.id}) }}" onsubmit="return confirm('Etes de vous sure de vouloir supprimer un utilisateur ?');">
+												<input type="hidden" name="_token" value="{{ csrf_token('delete' ~ user.id) }}">
+												<button class="boutons">
+													<i class='mdi mdi-delete icon'></i>
+												</button>
+											</form> #}
+										</td>
+
+									</tr>
+
+								{# {% else %}
+									<tr>
+										<td colspan="4" style="text-align:center; font-size: 14px; font-weight:bold">Aucun utilisateur trouvé !</td>
+									</tr>
+							 #}
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	{% block ajouter %}{% endblock %}
+	{% block modifier %}{% endblock %}
+{% endblock %}

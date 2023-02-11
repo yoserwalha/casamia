@@ -1,0 +1,51 @@
+{% extends 'base_front.html.twig' %}
+{% block title %}AMT - Inscription
+{% endblock %}
+{% block otherStyle %}
+	<link rel="stylesheet" href="{{ asset ('FrontOffice/css/style2.css')}}">
+	<link rel="stylesheet" href="{{ asset ('FrontOffice/css/style3.css')}}">
+{% endblock %}
+{% block carousel %}
+{% for message in app.flashes('message') %}
+        <div class="alert alert-success" role="alert">
+                {{ message }}
+        </div>
+    {% endfor %}
+    {% for message in app.flashes('warning') %}
+        <div class="alert alert-warning" role="alert">
+            {{ message }}
+        </div>
+    {% endfor %}
+    {% for message in app.flashes('danger') %}
+        <div class="alert alert-danger" role="alert">
+            {{ message }}
+        </div>
+    {% endfor %}
+<div style=" height:40px;">&nbsp;</div>
+
+	<center>
+		<div class="card login-form">
+			<div class="card-body">
+				<h3 class="card-title text-center">Réinitialisation de votre mot de passe</h3>
+
+				<div class="card-text">
+					<form action="{{ path('motDePasseOubliee') }}" method="post">
+						{{ form_start(emailForm , {'attr':{'novalidate':'novalidate'}}) }}
+						<div class="form-group">
+							<label for="exampleInputEmail1">Entrez votre email, nous vous enverrons un lien de réinitialisation de votre mot de passe.</label>
+							<br></br>
+						{# <input type="email" class="form-control form-control-sm" placeholder="Enter your email address"> #}
+						{{ form_widget(emailForm.email, {'attr': {'placeholder': "Enter your email address"}}) }}
+					</div>
+					<br>
+					<button type="submit" class= "button">Envoyer</button>
+					{{ form_end(emailForm) }}
+				</form>
+			</div>
+		</div>
+	</div>
+
+</div>
+</center>
+<div style="height:30px;">&nbsp;</div>
+{% endblock %}

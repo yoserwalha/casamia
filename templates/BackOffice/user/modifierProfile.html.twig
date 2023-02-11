@@ -1,0 +1,50 @@
+{% extends 'BackOffice/user/profile.html.twig' %}
+{% block boutonAdd %}
+	<div>
+		<a class="btn btn-primary text-white mb-0 me-0" href="{{path('profile') }}">
+			<i class="mdi mdi-close-octagon"></i>&nbsp;&nbsp;&nbsp;Annuler</a>
+	</div>
+{% endblock %}
+{# ************************** Modifier ************************ #}
+{% block modifier %}
+	<div class="row flex-grow">
+		<div class="col-12 grid-margin stretch-card">
+			<div class="card card-rounded">
+				<div class="card-body">
+					<div class="d-sm-flex justify-content-between align-items-start">
+						<div>
+							<h4 class="card-title card-title-dash">Modifier mon profil</h4>
+							<p class="card-subtitle card-subtitle-dash">Veuillez remplir ces champs pour modifier ton profil</p>
+							{{ form_start(form,{'attr':{'novalidate':'novalidate'}}) }}
+							<tr>
+								<th class="m-0 font-weight-bold text-dark">{{ form_label(form.username, "Nom Utilisateur") }}</th>
+								<th>{{ form_widget(form.username) }}</th>
+							</tr>
+							<br>
+							<tr>
+								<th class="m-0 font-weight-bold text-dark">{{ form_label(form.email, "Email Utilisateur") }}</th>
+								<th>{{ form_widget(form.email) }}</th>
+							</tr>
+							<br>
+							<tr>
+								<th class="m-0 font-weight-bold text-dark">{{ form_label(form.password, "Mot de passe") }}</th>
+								<th>{{ form_widget(form.password) }}</th>
+							</tr>
+							<tr>
+								<th class="m-0 font-weight-bold text-dark">{{ form_label(form.confirme_password, "Confirmer mot de passe") }}</th>
+								<th>{{ form_widget(form.confirme_password) }}</th>
+							</tr>
+							<tr>
+								<th class="m-0 font-weight-bold text-dark">{{ form_label(form.role, "Role") }}</th>
+								<th>{{ form_widget(form.role) }}</th>
+							</tr>
+							<br>
+							<button class="btn btn-primary text-white mb-0 me-0">{{ button_label|default('Enregistrer') }}</button>
+							{{ form_end(form) }}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
