@@ -123,14 +123,13 @@ class __TwigTemplate_bc458952c344375ff89adb924158046026cba04982fe427c4c9f08cb6c9
         // line 41
         echo "\t\t\t\t\t\t\t\t\t<th>Nom utilisateur</th>
 \t\t\t\t\t\t\t\t\t<th>Email</th>
-\t\t\t\t\t\t\t\t\t<th>Score</th>
-\t\t\t\t\t\t\t\t\t<th>Rang</th>
+\t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t<th>Role</th>
 \t\t\t\t\t\t\t\t\t<th>Date creation</th>
 \t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t<th></th>
 \t\t\t\t\t\t\t\t\t";
-        // line 50
+        // line 49
         echo "\t\t\t\t\t\t\t\t</tr>
 \t\t\t\t\t\t\t</thead>
 \t\t\t\t\t\t\t<tbody>
@@ -140,66 +139,55 @@ class __TwigTemplate_bc458952c344375ff89adb924158046026cba04982fe427c4c9f08cb6c9
 \t\t\t\t\t\t\t\t\t\t\t<div
 \t\t\t\t\t\t\t\t\t\t\t\tclass=\"d-flex \">
 \t\t\t\t\t\t\t\t\t\t\t\t";
-        // line 59
+        // line 58
         echo "\t\t\t\t\t\t\t\t\t\t\t\t<div>
 \t\t\t\t\t\t\t\t\t\t\t\t\t<h6>";
-        // line 60
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 60, $this->source); })()), "user", [], "any", false, false, false, 60), "getUsername", [], "method", false, false, false, 60), "html", null, true);
+        // line 59
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 59, $this->source); })()), "user", [], "any", false, false, false, 59), "getUsername", [], "method", false, false, false, 59), "html", null, true);
         echo "</h6>
 \t\t\t\t\t\t\t\t\t\t\t\t\t";
-        // line 62
+        // line 61
         echo "\t\t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t</td>
 \t\t\t\t\t\t\t\t\t\t<td>
 \t\t\t\t\t\t\t\t\t\t\t<h6>";
-        // line 66
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 66, $this->source); })()), "user", [], "any", false, false, false, 66), "getEmail", [], "method", false, false, false, 66), "html", null, true);
+        // line 65
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 65, $this->source); })()), "user", [], "any", false, false, false, 65), "getEmail", [], "method", false, false, false, 65), "html", null, true);
         echo "</h6>
 \t\t\t\t\t\t\t\t\t\t</td>
+\t\t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t\t<td>
 \t\t\t\t\t\t\t\t\t\t\t<h6>";
         // line 69
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 69, $this->source); })()), "user", [], "any", false, false, false, 69), "getScore", [], "method", false, false, false, 69), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 69, $this->source); })()), "user", [], "any", false, false, false, 69), "getRole", [], "method", false, false, false, 69), "html", null, true);
         echo "</h6>
 \t\t\t\t\t\t\t\t\t\t</td>
 \t\t\t\t\t\t\t\t\t\t<td>
 \t\t\t\t\t\t\t\t\t\t\t<h6>";
         // line 72
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 72, $this->source); })()), "user", [], "any", false, false, false, 72), "getRang", [], "method", false, false, false, 72), "html", null, true);
-        echo "</h6>
-\t\t\t\t\t\t\t\t\t\t</td>
-\t\t\t\t\t\t\t\t\t\t<td>
-\t\t\t\t\t\t\t\t\t\t\t<h6>";
-        // line 75
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 75, $this->source); })()), "user", [], "any", false, false, false, 75), "getRole", [], "method", false, false, false, 75), "html", null, true);
-        echo "</h6>
-\t\t\t\t\t\t\t\t\t\t</td>
-\t\t\t\t\t\t\t\t\t\t<td>
-\t\t\t\t\t\t\t\t\t\t\t<h6>";
-        // line 78
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 78, $this->source); })()), "user", [], "any", false, false, false, 78), "getDateCreation", [], "method", false, false, false, 78), "d-m-Y"), "html", null, true);
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 72, $this->source); })()), "user", [], "any", false, false, false, 72), "getDateCreation", [], "method", false, false, false, 72), "d-m-Y"), "html", null, true);
         echo "</h6>
 \t\t\t\t\t\t\t\t\t\t</td>
 \t\t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t\t<td>
 \t\t\t\t\t\t\t\t\t\t\t<form method=\"post\" action=\"";
-        // line 83
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_user_edit_profile", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 83, $this->source); })()), "user", [], "any", false, false, false, 83), "getId", [], "method", false, false, false, 83)]), "html", null, true);
+        // line 77
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_user_edit_profile", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 77, $this->source); })()), "user", [], "any", false, false, false, 77), "getId", [], "method", false, false, false, 77)]), "html", null, true);
         echo "\">
 \t\t\t\t\t\t\t\t\t\t\t\t<button class=\"boutons\">
 \t\t\t\t\t\t\t\t\t\t\t\t\t<i class='mdi mdi-pencil icon'></i>
 \t\t\t\t\t\t\t\t\t\t\t\t</button>
 \t\t\t\t\t\t\t\t\t\t\t</form>
 \t\t\t\t\t\t\t\t\t\t\t";
-        // line 94
+        // line 88
         echo "\t\t\t\t\t\t\t\t\t\t</td>
 
 \t\t\t\t\t\t\t\t\t</tr>
 
 \t\t\t\t\t\t\t\t";
-        // line 103
+        // line 97
         echo "\t\t\t\t\t\t\t</tbody>
 \t\t\t\t\t\t</table>
 \t\t\t\t\t</div>
@@ -209,9 +197,9 @@ class __TwigTemplate_bc458952c344375ff89adb924158046026cba04982fe427c4c9f08cb6c9
 \t\t</div>
 \t</div>
 \t";
-        // line 111
+        // line 105
         $this->displayBlock('ajouter', $context, $blocks);
-        // line 112
+        // line 106
         echo "\t";
         $this->displayBlock('modifier', $context, $blocks);
         
@@ -222,7 +210,7 @@ class __TwigTemplate_bc458952c344375ff89adb924158046026cba04982fe427c4c9f08cb6c9
 
     }
 
-    // line 111
+    // line 105
     public function block_ajouter($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -240,7 +228,7 @@ class __TwigTemplate_bc458952c344375ff89adb924158046026cba04982fe427c4c9f08cb6c9
 
     }
 
-    // line 112
+    // line 106
     public function block_modifier($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -270,7 +258,7 @@ class __TwigTemplate_bc458952c344375ff89adb924158046026cba04982fe427c4c9f08cb6c9
 
     public function getDebugInfo()
     {
-        return array (  244 => 112,  226 => 111,  215 => 112,  213 => 111,  203 => 103,  197 => 94,  189 => 83,  181 => 78,  175 => 75,  169 => 72,  163 => 69,  157 => 66,  151 => 62,  147 => 60,  144 => 59,  134 => 50,  124 => 41,  118 => 36,  115 => 34,  105 => 20,  95 => 19,  71 => 3,  61 => 2,  38 => 1,);
+        return array (  232 => 106,  214 => 105,  203 => 106,  201 => 105,  191 => 97,  185 => 88,  177 => 77,  169 => 72,  163 => 69,  156 => 65,  150 => 61,  146 => 59,  143 => 58,  133 => 49,  124 => 41,  118 => 36,  115 => 34,  105 => 20,  95 => 19,  71 => 3,  61 => 2,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -317,8 +305,7 @@ class __TwigTemplate_bc458952c344375ff89adb924158046026cba04982fe427c4c9f08cb6c9
 \t\t\t\t\t\t\t\t\t{# <th></th> #}
 \t\t\t\t\t\t\t\t\t<th>Nom utilisateur</th>
 \t\t\t\t\t\t\t\t\t<th>Email</th>
-\t\t\t\t\t\t\t\t\t<th>Score</th>
-\t\t\t\t\t\t\t\t\t<th>Rang</th>
+\t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t<th>Role</th>
 \t\t\t\t\t\t\t\t\t<th>Date creation</th>
 \t\t\t\t\t\t\t\t\t
@@ -342,12 +329,7 @@ class __TwigTemplate_bc458952c344375ff89adb924158046026cba04982fe427c4c9f08cb6c9
 \t\t\t\t\t\t\t\t\t\t<td>
 \t\t\t\t\t\t\t\t\t\t\t<h6>{{ app.user.getEmail() }}</h6>
 \t\t\t\t\t\t\t\t\t\t</td>
-\t\t\t\t\t\t\t\t\t\t<td>
-\t\t\t\t\t\t\t\t\t\t\t<h6>{{ app.user.getScore()  }}</h6>
-\t\t\t\t\t\t\t\t\t\t</td>
-\t\t\t\t\t\t\t\t\t\t<td>
-\t\t\t\t\t\t\t\t\t\t\t<h6>{{ app.user.getRang() }}</h6>
-\t\t\t\t\t\t\t\t\t\t</td>
+\t\t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t\t<td>
 \t\t\t\t\t\t\t\t\t\t\t<h6>{{ app.user.getRole() }}</h6>
 \t\t\t\t\t\t\t\t\t\t</td>
@@ -388,6 +370,6 @@ class __TwigTemplate_bc458952c344375ff89adb924158046026cba04982fe427c4c9f08cb6c9
 \t{% block ajouter %}{% endblock %}
 \t{% block modifier %}{% endblock %}
 {% endblock %}
-", "BackOffice/user/profile.html.twig", "C:\\Users\\YoserWalha\\OneDrive\\Bureau\\amtlearning-meeting2\\templates\\BackOffice\\user\\profile.html.twig");
+", "BackOffice/user/profile.html.twig", "C:\\Users\\YoserWalha\\OneDrive\\Bureau\\casamia\\templates\\BackOffice\\user\\profile.html.twig");
     }
 }

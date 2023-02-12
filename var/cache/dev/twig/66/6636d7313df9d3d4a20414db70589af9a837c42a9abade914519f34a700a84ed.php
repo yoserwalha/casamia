@@ -239,32 +239,29 @@ class __TwigTemplate_242e53b30ca7a4e0dc14bb7256303a7ef3c01d48f362464cb7f7c88cc66
         // line 54
         echo "\t\t\t<!-- Navbar Start -->
 \t\t\t<nav class=\"navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0\">
-\t\t\t\t<a href=\"index.html\" class=\"navbar-brand d-flex align-items-center px-4 px-lg-5\">
+\t\t\t\t<a href=\"";
+        // line 56
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("inscription");
+        echo "\" class=\"navbar-brand d-flex align-items-center px-4 px-lg-5\">
 \t\t\t\t\t<h2 class=\"m-0 text-primary\">
-\t\t\t\t\t\t<i class=\"fa fa-book me-3\"></i>eLEARNING</h2>
+\t\t\t\t\t\t<i class=\"fa fa-globe me-3\"></i>CasaMia</h2>
 \t\t\t\t</a>
 \t\t\t\t<button type=\"button\" class=\"navbar-toggler me-4\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarCollapse\">
 \t\t\t\t\t<span class=\"navbar-toggler-icon\"></span>
 \t\t\t\t</button>
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">
 \t\t\t\t\t<div class=\"navbar-nav ms-auto p-4 p-lg-0\">
-\t\t\t\t\t\t<a href=\"index.html\" class=\"nav-item nav-link active\">Home</a>
-\t\t\t\t\t\t<a href=\"about.html\" class=\"nav-item nav-link\">About</a>
-\t\t\t\t\t\t<a href=\"courses.html\" class=\"nav-item nav-link\">Courses</a>
-\t\t\t\t\t\t<div class=\"nav-item dropdown\">
-\t\t\t\t\t\t\t<a href=\"#\" class=\"nav-link dropdown-toggle\" data-bs-toggle=\"dropdown\">Pages</a>
-\t\t\t\t\t\t\t<div class=\"dropdown-menu fade-down m-0\">
-\t\t\t\t\t\t\t\t<a href=\"team.html\" class=\"dropdown-item\">Our Team</a>
-\t\t\t\t\t\t\t\t<a href=\"testimonial.html\" class=\"dropdown-item\">Testimonial</a>
-\t\t\t\t\t\t\t\t<a href=\"404.html\" class=\"dropdown-item\">404 Page</a>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<a href=\"contact.html\" class=\"nav-item nav-link\">Contact</a>
+\t\t\t\t\t\t<a href=\"index.html\" class=\"nav-item nav-link active\"></a>
+\t\t\t\t\t\t<a href=\"about.html\" class=\"nav-item nav-link\"></a>
+\t\t\t\t\t\t<a href=\"courses.html\" class=\"nav-item nav-link\"></a>
+\t\t\t\t\t\t";
+        // line 76
+        echo "\t\t\t\t\t\t<a href=\"contact.html\" class=\"nav-item nav-link\"></a>
 \t\t\t\t\t</div>
 \t\t\t\t\t<a href=\"";
         // line 78
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("inscription");
-        echo "\" class=\"btn btn-primary py-4 px-lg-5 d-none d-lg-block\">Join Now<i class=\"fa fa-arrow-right ms-3\"></i>
+        echo "\" class=\"btn btn-primary py-4 px-lg-5 d-none d-lg-block\">Sign In<i class=\"fa fa-arrow-right ms-3\"></i>
 \t\t\t\t\t</a>
 \t\t\t\t</div>
 \t\t\t</nav>
@@ -289,51 +286,9 @@ class __TwigTemplate_242e53b30ca7a4e0dc14bb7256303a7ef3c01d48f362464cb7f7c88cc66
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "carousel"));
 
         // line 86
-        echo "\t\t\t<!-- Carousel Start -->
-\t\t\t<div class=\"container-fluid p-0 mb-5\">
-\t\t\t\t<div class=\"owl-carousel header-carousel position-relative\">
-\t\t\t\t\t<div class=\"owl-carousel-item position-relative\">
-\t\t\t\t\t\t<img class=\"img-fluid\" src=\"";
-        // line 90
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("FrontOffice/img/carousel-1.jpg "), "html", null, true);
-        echo "\" alt=\"\">
-\t\t\t\t\t\t<div class=\"position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center\" style=\"background: rgba(24, 29, 56, .7);\">
-\t\t\t\t\t\t\t<div class=\"container\">
-\t\t\t\t\t\t\t\t<div class=\"row justify-content-start\">
-\t\t\t\t\t\t\t\t\t<div class=\"col-sm-10 col-lg-8\">
-\t\t\t\t\t\t\t\t\t\t<h5 class=\"text-primary text-uppercase mb-3 animated slideInDown\">Best Online Courses</h5>
-\t\t\t\t\t\t\t\t\t\t<h1 class=\"display-3 text-white animated slideInDown\">The Best Online Learning Platform</h1>
-\t\t\t\t\t\t\t\t\t\t<p class=\"fs-5 text-white mb-4 pb-2\">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
-\t\t\t\t\t\t\t\t\t\t<a href=\"\" class=\"btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft\">Read More</a>
-\t\t\t\t\t\t\t\t\t\t<a href=\"\" class=\"btn btn-light py-md-3 px-md-5 animated slideInRight\">Join Now</a>
-\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t\t<div class=\"owl-carousel-item position-relative\">
-\t\t\t\t\t\t<img class=\"img-fluid\" src=\"";
-        // line 106
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("FrontOffice/img/carousel-2.jpg "), "html", null, true);
-        echo "\" alt=\"\">
-\t\t\t\t\t\t<div class=\"position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center\" style=\"background: rgba(24, 29, 56, .7);\">
-\t\t\t\t\t\t\t<div class=\"container\">
-\t\t\t\t\t\t\t\t<div class=\"row justify-content-start\">
-\t\t\t\t\t\t\t\t\t<div class=\"col-sm-10 col-lg-8\">
-\t\t\t\t\t\t\t\t\t\t<h5 class=\"text-primary text-uppercase mb-3 animated slideInDown\">Best Online Courses</h5>
-\t\t\t\t\t\t\t\t\t\t<h1 class=\"display-3 text-white animated slideInDown\">Get Educated Online From Your Home</h1>
-\t\t\t\t\t\t\t\t\t\t<p class=\"fs-5 text-white mb-4 pb-2\">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
-\t\t\t\t\t\t\t\t\t\t<a href=\"\" class=\"btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft\">Read More</a>
-\t\t\t\t\t\t\t\t\t\t<a href=\"\" class=\"btn btn-light py-md-3 px-md-5 animated slideInRight\">Join Now</a>
-\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t</div>
-\t\t\t<!-- Carousel End -->
-
+        echo "\t\t\t";
+        // line 124
+        echo "
 
 \t\t";
         
@@ -549,7 +504,7 @@ class __TwigTemplate_242e53b30ca7a4e0dc14bb7256303a7ef3c01d48f362464cb7f7c88cc66
 
     public function getDebugInfo()
     {
-        return array (  523 => 246,  509 => 229,  499 => 228,  448 => 186,  442 => 183,  436 => 180,  430 => 177,  424 => 174,  418 => 171,  376 => 131,  366 => 130,  348 => 128,  317 => 106,  298 => 90,  292 => 86,  282 => 85,  266 => 78,  240 => 54,  230 => 53,  220 => 42,  218 => 41,  208 => 40,  197 => 10,  187 => 9,  175 => 247,  173 => 246,  168 => 244,  162 => 241,  158 => 240,  154 => 239,  150 => 238,  144 => 234,  142 => 228,  139 => 227,  137 => 130,  134 => 129,  132 => 128,  129 => 127,  127 => 85,  124 => 84,  122 => 53,  110 => 43,  108 => 40,  103 => 38,  97 => 35,  90 => 31,  85 => 29,  68 => 15,  63 => 12,  61 => 9,  51 => 1,);
+        return array (  478 => 246,  464 => 229,  454 => 228,  403 => 186,  397 => 183,  391 => 180,  385 => 177,  379 => 174,  373 => 171,  331 => 131,  321 => 130,  303 => 128,  291 => 124,  289 => 86,  279 => 85,  263 => 78,  259 => 76,  244 => 56,  240 => 54,  230 => 53,  220 => 42,  218 => 41,  208 => 40,  197 => 10,  187 => 9,  175 => 247,  173 => 246,  168 => 244,  162 => 241,  158 => 240,  154 => 239,  150 => 238,  144 => 234,  142 => 228,  139 => 227,  137 => 130,  134 => 129,  132 => 128,  129 => 127,  127 => 85,  124 => 84,  122 => 53,  110 => 43,  108 => 40,  103 => 38,  97 => 35,  90 => 31,  85 => 29,  68 => 15,  63 => 12,  61 => 9,  51 => 1,);
     }
 
     public function getSourceContext()
@@ -609,29 +564,29 @@ class __TwigTemplate_242e53b30ca7a4e0dc14bb7256303a7ef3c01d48f362464cb7f7c88cc66
 \t\t{% block navbar %}
 \t\t\t<!-- Navbar Start -->
 \t\t\t<nav class=\"navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0\">
-\t\t\t\t<a href=\"index.html\" class=\"navbar-brand d-flex align-items-center px-4 px-lg-5\">
+\t\t\t\t<a href=\"{{ path('inscription') }}\" class=\"navbar-brand d-flex align-items-center px-4 px-lg-5\">
 \t\t\t\t\t<h2 class=\"m-0 text-primary\">
-\t\t\t\t\t\t<i class=\"fa fa-book me-3\"></i>eLEARNING</h2>
+\t\t\t\t\t\t<i class=\"fa fa-globe me-3\"></i>CasaMia</h2>
 \t\t\t\t</a>
 \t\t\t\t<button type=\"button\" class=\"navbar-toggler me-4\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarCollapse\">
 \t\t\t\t\t<span class=\"navbar-toggler-icon\"></span>
 \t\t\t\t</button>
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">
 \t\t\t\t\t<div class=\"navbar-nav ms-auto p-4 p-lg-0\">
-\t\t\t\t\t\t<a href=\"index.html\" class=\"nav-item nav-link active\">Home</a>
-\t\t\t\t\t\t<a href=\"about.html\" class=\"nav-item nav-link\">About</a>
-\t\t\t\t\t\t<a href=\"courses.html\" class=\"nav-item nav-link\">Courses</a>
-\t\t\t\t\t\t<div class=\"nav-item dropdown\">
-\t\t\t\t\t\t\t<a href=\"#\" class=\"nav-link dropdown-toggle\" data-bs-toggle=\"dropdown\">Pages</a>
+\t\t\t\t\t\t<a href=\"index.html\" class=\"nav-item nav-link active\"></a>
+\t\t\t\t\t\t<a href=\"about.html\" class=\"nav-item nav-link\"></a>
+\t\t\t\t\t\t<a href=\"courses.html\" class=\"nav-item nav-link\"></a>
+\t\t\t\t\t\t{# <div class=\"nav-item dropdown\">
+\t\t\t\t\t\t\t<a href=\"#\" class=\"nav-link dropdown-toggle\" data-bs-toggle=\"dropdown\"></a>
 \t\t\t\t\t\t\t<div class=\"dropdown-menu fade-down m-0\">
-\t\t\t\t\t\t\t\t<a href=\"team.html\" class=\"dropdown-item\">Our Team</a>
-\t\t\t\t\t\t\t\t<a href=\"testimonial.html\" class=\"dropdown-item\">Testimonial</a>
-\t\t\t\t\t\t\t\t<a href=\"404.html\" class=\"dropdown-item\">404 Page</a>
+\t\t\t\t\t\t\t\t<a href=\"team.html\" class=\"dropdown-item\"></a>
+\t\t\t\t\t\t\t\t<a href=\"testimonial.html\" class=\"dropdown-item\"></a>
+\t\t\t\t\t\t\t\t<a href=\"404.html\" class=\"dropdown-item\"></a>
 \t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<a href=\"contact.html\" class=\"nav-item nav-link\">Contact</a>
+\t\t\t\t\t\t</div> #}
+\t\t\t\t\t\t<a href=\"contact.html\" class=\"nav-item nav-link\"></a>
 \t\t\t\t\t</div>
-\t\t\t\t\t<a href=\"{{ path('inscription') }}\" class=\"btn btn-primary py-4 px-lg-5 d-none d-lg-block\">Join Now<i class=\"fa fa-arrow-right ms-3\"></i>
+\t\t\t\t\t<a href=\"{{ path('inscription') }}\" class=\"btn btn-primary py-4 px-lg-5 d-none d-lg-block\">Sign In<i class=\"fa fa-arrow-right ms-3\"></i>
 \t\t\t\t\t</a>
 \t\t\t\t</div>
 \t\t\t</nav>
@@ -639,7 +594,7 @@ class __TwigTemplate_242e53b30ca7a4e0dc14bb7256303a7ef3c01d48f362464cb7f7c88cc66
 \t\t{% endblock %}
 
 \t\t{% block carousel %}
-\t\t\t<!-- Carousel Start -->
+\t\t\t{# <!-- Carousel Start -->
 \t\t\t<div class=\"container-fluid p-0 mb-5\">
 \t\t\t\t<div class=\"owl-carousel header-carousel position-relative\">
 \t\t\t\t\t<div class=\"owl-carousel-item position-relative\">
@@ -676,7 +631,7 @@ class __TwigTemplate_242e53b30ca7a4e0dc14bb7256303a7ef3c01d48f362464cb7f7c88cc66
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
-\t\t\t<!-- Carousel End -->
+\t\t\t<!-- Carousel End --> #}
 
 
 \t\t{% endblock %}
@@ -802,6 +757,6 @@ class __TwigTemplate_242e53b30ca7a4e0dc14bb7256303a7ef3c01d48f362464cb7f7c88cc66
 \t\t{% block otherJS %}{% endblock %}
 \t</body>
 </html>
-", "base_front.html.twig", "C:\\Users\\YoserWalha\\OneDrive\\Bureau\\amtlearning-meeting2\\templates\\base_front.html.twig");
+", "base_front.html.twig", "C:\\Users\\YoserWalha\\OneDrive\\Bureau\\casamia\\templates\\base_front.html.twig");
     }
 }

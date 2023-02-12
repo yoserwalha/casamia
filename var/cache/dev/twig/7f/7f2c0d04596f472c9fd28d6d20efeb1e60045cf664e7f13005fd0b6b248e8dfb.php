@@ -66,49 +66,9 @@ class __TwigTemplate_b401f360683d287e19d0eff8e45342cc6a2c87fff057126835d5db23e56
 
         // line 3
         echo "\t<!-- Service Start -->
-\t<div class=\"container-xxl py-5\">
-\t\t<div class=\"container\">
-\t\t\t<div class=\"row g-4\">
-\t\t\t\t<div class=\"col-lg-3 col-sm-6 wow fadeInUp\" data-wow-delay=\"0.1s\">
-\t\t\t\t\t<div class=\"service-item text-center pt-3\">
-\t\t\t\t\t\t<div class=\"p-4\">
-\t\t\t\t\t\t\t<i class=\"fa fa-3x fa-graduation-cap text-primary mb-4\"></i>
-\t\t\t\t\t\t\t<h5 class=\"mb-3\">Skilled Instructors</h5>
-\t\t\t\t\t\t\t<p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-3 col-sm-6 wow fadeInUp\" data-wow-delay=\"0.3s\">
-\t\t\t\t\t<div class=\"service-item text-center pt-3\">
-\t\t\t\t\t\t<div class=\"p-4\">
-\t\t\t\t\t\t\t<i class=\"fa fa-3x fa-globe text-primary mb-4\"></i>
-\t\t\t\t\t\t\t<h5 class=\"mb-3\">Online Classes</h5>
-\t\t\t\t\t\t\t<p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-3 col-sm-6 wow fadeInUp\" data-wow-delay=\"0.5s\">
-\t\t\t\t\t<div class=\"service-item text-center pt-3\">
-\t\t\t\t\t\t<div class=\"p-4\">
-\t\t\t\t\t\t\t<i class=\"fa fa-3x fa-home text-primary mb-4\"></i>
-\t\t\t\t\t\t\t<h5 class=\"mb-3\">Home Projects</h5>
-\t\t\t\t\t\t\t<p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-3 col-sm-6 wow fadeInUp\" data-wow-delay=\"0.7s\">
-\t\t\t\t\t<div class=\"service-item text-center pt-3\">
-\t\t\t\t\t\t<div class=\"p-4\">
-\t\t\t\t\t\t\t<i class=\"fa fa-3x fa-book-open text-primary mb-4\"></i>
-\t\t\t\t\t\t\t<h5 class=\"mb-3\">Book Library</h5>
-\t\t\t\t\t\t\t<p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t</div>
-\t\t</div>
-\t</div>
-\t<!-- Service End -->
+\t";
+        // line 46
+        echo "\t<!-- Service End -->
 
 
 \t<!-- About Start -->
@@ -545,7 +505,7 @@ class __TwigTemplate_b401f360683d287e19d0eff8e45342cc6a2c87fff057126835d5db23e56
 
     public function getDebugInfo()
     {
-        return array (  513 => 401,  502 => 393,  491 => 385,  480 => 377,  441 => 341,  414 => 317,  387 => 293,  360 => 269,  312 => 224,  278 => 193,  244 => 162,  217 => 138,  203 => 127,  191 => 118,  179 => 109,  122 => 55,  68 => 3,  58 => 2,  35 => 1,);
+        return array (  473 => 401,  462 => 393,  451 => 385,  440 => 377,  401 => 341,  374 => 317,  347 => 293,  320 => 269,  272 => 224,  238 => 193,  204 => 162,  177 => 138,  163 => 127,  151 => 118,  139 => 109,  82 => 55,  71 => 46,  68 => 3,  58 => 2,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -553,7 +513,7 @@ class __TwigTemplate_b401f360683d287e19d0eff8e45342cc6a2c87fff057126835d5db23e56
         return new Source("{% extends 'base_front.html.twig' %}
 {% block body %}
 \t<!-- Service Start -->
-\t<div class=\"container-xxl py-5\">
+\t{# <div class=\"container-xxl py-5\">
 \t\t<div class=\"container\">
 \t\t\t<div class=\"row g-4\">
 \t\t\t\t<div class=\"col-lg-3 col-sm-6 wow fadeInUp\" data-wow-delay=\"0.1s\">
@@ -594,7 +554,7 @@ class __TwigTemplate_b401f360683d287e19d0eff8e45342cc6a2c87fff057126835d5db23e56
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
-\t</div>
+\t</div> #}
 \t<!-- Service End -->
 
 
@@ -964,6 +924,6 @@ class __TwigTemplate_b401f360683d287e19d0eff8e45342cc6a2c87fff057126835d5db23e56
 
 
 {% endblock %}
-", "FrontOffice/accueil/index.html.twig", "C:\\Users\\YoserWalha\\OneDrive\\Bureau\\amtlearning-meeting2\\templates\\FrontOffice\\accueil\\index.html.twig");
+", "FrontOffice/accueil/index.html.twig", "C:\\Users\\YoserWalha\\OneDrive\\Bureau\\casamia\\templates\\FrontOffice\\accueil\\index.html.twig");
     }
 }

@@ -152,7 +152,7 @@ class __TwigTemplate_81f61a4a9c6ca3e3f88bd355871d97e954388e5eaceeb0311bf00bdfbc2
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 54, $this->source); })()), "user", [], "any", false, false, false, 54), "getUsername", [], "method", false, false, false, 54), "html", null, true);
         echo "</span>
 \t\t\t\t\t\t\t\t</h1>
-\t\t\t\t\t\t\t\t<h3 class=\"welcome-sub-text\">Retrouvez ici toutes les informations sur votre site AMT Learning !
+\t\t\t\t\t\t\t\t<h3 class=\"welcome-sub-text\">Retrouvez ici toutes les informations sur votre site CasaMia !
 \t\t\t\t\t\t\t\t</h3>
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t</ul>
@@ -166,13 +166,9 @@ class __TwigTemplate_81f61a4a9c6ca3e3f88bd355871d97e954388e5eaceeb0311bf00bdfbc2
 \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\">
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t<li class=\"nav-item\">
-\t\t\t\t\t\t\t\t<form class=\"search-form\" action=\"#\">
-\t\t\t\t\t\t\t\t\t<i class=\"icon-search\"></i>
-\t\t\t\t\t\t\t\t\t<input type=\"search\" class=\"form-control\" placeholder=\"Search Here\" title=\"Search here\">
-\t\t\t\t\t\t\t\t</form>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t";
+        // line 76
+        echo "\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t";
         // line 77
         $this->displayBlock('profil', $context, $blocks);
@@ -210,18 +206,9 @@ class __TwigTemplate_81f61a4a9c6ca3e3f88bd355871d97e954388e5eaceeb0311bf00bdfbc2
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
-\t\t\t\t\t<div id=\"right-sidebar\" class=\"settings-panel\">
-\t\t\t\t\t\t<i class=\"settings-close ti-close\"></i>
-\t\t\t\t\t\t<ul class=\"nav nav-tabs border-top\" id=\"setting-panel\" role=\"tablist\">
-\t\t\t\t\t\t\t<li class=\"nav-item\">
-\t\t\t\t\t\t\t\t<a class=\"nav-link active\" id=\"todo-tab\" data-bs-toggle=\"tab\" href=\"#todo-section\" role=\"tab\" aria-controls=\"todo-section\" aria-expanded=\"true\">TO DO ppppppppppppppLIST</a>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t<li class=\"nav-item\">
-\t\t\t\t\t\t\t\t<a class=\"nav-link\" id=\"chats-tab\" data-bs-toggle=\"tab\" href=\"#chats-section\" role=\"tab\" aria-controls=\"chats-section\">CHATS</a>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t</ul>
-\t\t\t\t\t</div>
-\t\t\t\t\t<!-- partial -->
+\t\t\t\t\t";
+        // line 144
+        echo "\t\t\t\t\t<!-- partial -->
 \t\t\t\t\t<!-- partial:partials/_sidebar.html -->
 \t\t\t\t\t";
         // line 146
@@ -457,7 +444,7 @@ class __TwigTemplate_81f61a4a9c6ca3e3f88bd355871d97e954388e5eaceeb0311bf00bdfbc2
 \t\t\t\t\t\t\t\t<li class=\"nav-item\">
 \t\t\t\t\t\t\t\t\t<a class=\"nav-link\" href=\"";
         // line 150
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_dashboard");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_index_back");
         echo "\">
 \t\t\t\t\t\t\t\t\t\t<i class=\"mdi mdi-grid-large menu-icon\"></i>
 \t\t\t\t\t\t\t\t\t\t<span class=\"menu-title\">Dashboard</span>
@@ -466,16 +453,9 @@ class __TwigTemplate_81f61a4a9c6ca3e3f88bd355871d97e954388e5eaceeb0311bf00bdfbc2
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t<li class=\"nav-item nav-category\">Pages</li>
 
-\t\t\t\t\t\t\t\t<li class=\"nav-item\">
-\t\t\t\t\t\t\t\t\t<a class=\"nav-link\" href=\"";
-        // line 159
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_index_back");
-        echo "\">
-\t\t\t\t\t\t\t\t\t\t<i class=\"menu-icon mdi mdi-card-text-outline\"></i>
-\t\t\t\t\t\t\t\t\t\t<span class=\"menu-title\">Commande</span>
-\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t<li class=\"nav-item\">
+\t\t\t\t\t\t\t\t";
+        // line 164
+        echo "\t\t\t\t\t\t\t\t<li class=\"nav-item\">
 \t\t\t\t\t\t\t\t\t<a class=\"nav-link\" href=\"";
         // line 165
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("userBack");
@@ -487,8 +467,9 @@ class __TwigTemplate_81f61a4a9c6ca3e3f88bd355871d97e954388e5eaceeb0311bf00bdfbc2
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<li class=\"nav-item nav-category\">Autre</li>
-\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t";
+        // line 174
+        echo "\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t</ul>
 \t\t\t\t\t\t</nav>
 \t\t\t\t\t";
@@ -576,7 +557,7 @@ class __TwigTemplate_81f61a4a9c6ca3e3f88bd355871d97e954388e5eaceeb0311bf00bdfbc2
 
     public function getDebugInfo()
     {
-        return array (  550 => 225,  532 => 186,  522 => 185,  504 => 181,  481 => 165,  472 => 159,  460 => 150,  455 => 147,  445 => 146,  432 => 101,  422 => 100,  407 => 94,  403 => 92,  397 => 88,  394 => 87,  390 => 85,  386 => 84,  379 => 80,  375 => 78,  365 => 77,  347 => 27,  336 => 8,  326 => 7,  314 => 226,  312 => 225,  306 => 222,  302 => 221,  298 => 220,  292 => 217,  288 => 216,  284 => 215,  280 => 214,  276 => 213,  269 => 209,  265 => 208,  261 => 207,  255 => 204,  244 => 195,  242 => 185,  237 => 182,  235 => 181,  230 => 178,  228 => 146,  185 => 105,  183 => 100,  180 => 99,  178 => 77,  152 => 54,  141 => 46,  137 => 45,  132 => 43,  128 => 42,  112 => 28,  110 => 27,  106 => 26,  102 => 25,  95 => 21,  91 => 20,  85 => 17,  81 => 16,  77 => 15,  73 => 14,  69 => 13,  65 => 12,  61 => 10,  59 => 7,  51 => 1,);
+        return array (  531 => 225,  513 => 186,  503 => 185,  485 => 181,  472 => 174,  461 => 165,  458 => 164,  447 => 150,  442 => 147,  432 => 146,  419 => 101,  409 => 100,  394 => 94,  390 => 92,  384 => 88,  381 => 87,  377 => 85,  373 => 84,  366 => 80,  362 => 78,  352 => 77,  334 => 27,  323 => 8,  313 => 7,  301 => 226,  299 => 225,  293 => 222,  289 => 221,  285 => 220,  279 => 217,  275 => 216,  271 => 215,  267 => 214,  263 => 213,  256 => 209,  252 => 208,  248 => 207,  242 => 204,  231 => 195,  229 => 185,  224 => 182,  222 => 181,  217 => 178,  215 => 146,  211 => 144,  181 => 105,  179 => 100,  176 => 99,  174 => 77,  171 => 76,  152 => 54,  141 => 46,  137 => 45,  132 => 43,  128 => 42,  112 => 28,  110 => 27,  106 => 26,  102 => 25,  95 => 21,  91 => 20,  85 => 17,  81 => 16,  77 => 15,  73 => 14,  69 => 13,  65 => 12,  61 => 10,  59 => 7,  51 => 1,);
     }
 
     public function getSourceContext()
@@ -636,7 +617,7 @@ class __TwigTemplate_81f61a4a9c6ca3e3f88bd355871d97e954388e5eaceeb0311bf00bdfbc2
 \t\t\t\t\t\t\t\t<h1 class=\"welcome-text\">Bonjour,
 \t\t\t\t\t\t\t\t\t<span class=\"text-black fw-bold\">{{ app.user.getUsername() }}</span>
 \t\t\t\t\t\t\t\t</h1>
-\t\t\t\t\t\t\t\t<h3 class=\"welcome-sub-text\">Retrouvez ici toutes les informations sur votre site AMT Learning !
+\t\t\t\t\t\t\t\t<h3 class=\"welcome-sub-text\">Retrouvez ici toutes les informations sur votre site CasaMia !
 \t\t\t\t\t\t\t\t</h3>
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t</ul>
@@ -650,12 +631,12 @@ class __TwigTemplate_81f61a4a9c6ca3e3f88bd355871d97e954388e5eaceeb0311bf00bdfbc2
 \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\">
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t<li class=\"nav-item\">
+\t\t\t\t\t\t\t{# <li class=\"nav-item\">
 \t\t\t\t\t\t\t\t<form class=\"search-form\" action=\"#\">
 \t\t\t\t\t\t\t\t\t<i class=\"icon-search\"></i>
 \t\t\t\t\t\t\t\t\t<input type=\"search\" class=\"form-control\" placeholder=\"Search Here\" title=\"Search here\">
 \t\t\t\t\t\t\t\t</form>
-\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t</li> #}
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t{% block profil %}
 \t\t\t\t\t\t\t\t<li class=\"nav-item dropdown d-none d-lg-block user-dropdown\">
@@ -713,7 +694,7 @@ class __TwigTemplate_81f61a4a9c6ca3e3f88bd355871d97e954388e5eaceeb0311bf00bdfbc2
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
-\t\t\t\t\t<div id=\"right-sidebar\" class=\"settings-panel\">
+\t\t\t\t\t{# <div id=\"right-sidebar\" class=\"settings-panel\">
 \t\t\t\t\t\t<i class=\"settings-close ti-close\"></i>
 \t\t\t\t\t\t<ul class=\"nav nav-tabs border-top\" id=\"setting-panel\" role=\"tablist\">
 \t\t\t\t\t\t\t<li class=\"nav-item\">
@@ -723,14 +704,14 @@ class __TwigTemplate_81f61a4a9c6ca3e3f88bd355871d97e954388e5eaceeb0311bf00bdfbc2
 \t\t\t\t\t\t\t\t<a class=\"nav-link\" id=\"chats-tab\" data-bs-toggle=\"tab\" href=\"#chats-section\" role=\"tab\" aria-controls=\"chats-section\">CHATS</a>
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t</ul>
-\t\t\t\t\t</div>
+\t\t\t\t\t</div> #}
 \t\t\t\t\t<!-- partial -->
 \t\t\t\t\t<!-- partial:partials/_sidebar.html -->
 \t\t\t\t\t{% block sidebar %}
 \t\t\t\t\t\t<nav class=\"sidebar sidebar-offcanvas\" id=\"sidebar\">
 \t\t\t\t\t\t\t<ul class=\"nav\">
 \t\t\t\t\t\t\t\t<li class=\"nav-item\">
-\t\t\t\t\t\t\t\t\t<a class=\"nav-link\" href=\"{{path('app_dashboard')}}\">
+\t\t\t\t\t\t\t\t\t<a class=\"nav-link\" href=\"{{path('commande_index_back')}}\">
 \t\t\t\t\t\t\t\t\t\t<i class=\"mdi mdi-grid-large menu-icon\"></i>
 \t\t\t\t\t\t\t\t\t\t<span class=\"menu-title\">Dashboard</span>
 \t\t\t\t\t\t\t\t\t</a>
@@ -738,12 +719,12 @@ class __TwigTemplate_81f61a4a9c6ca3e3f88bd355871d97e954388e5eaceeb0311bf00bdfbc2
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t<li class=\"nav-item nav-category\">Pages</li>
 
-\t\t\t\t\t\t\t\t<li class=\"nav-item\">
+\t\t\t\t\t\t\t\t{# <li class=\"nav-item\">
 \t\t\t\t\t\t\t\t\t<a class=\"nav-link\" href=\"{{path('commande_index_back')}}\">
 \t\t\t\t\t\t\t\t\t\t<i class=\"menu-icon mdi mdi-card-text-outline\"></i>
 \t\t\t\t\t\t\t\t\t\t<span class=\"menu-title\">Commande</span>
 \t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t</li> #}
 \t\t\t\t\t\t\t\t<li class=\"nav-item\">
 \t\t\t\t\t\t\t\t\t<a class=\"nav-link\" href=\"{{path('userBack')}}\">
 \t\t\t\t\t\t\t\t\t\t<i class=\"menu-icon mdi mdi-account-circle-outline\"></i>
@@ -753,7 +734,7 @@ class __TwigTemplate_81f61a4a9c6ca3e3f88bd355871d97e954388e5eaceeb0311bf00bdfbc2
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<li class=\"nav-item nav-category\">Autre</li>
+\t\t\t\t\t\t\t\t{# <li class=\"nav-item nav-category\">Autre</li> #}
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t</ul>
 \t\t\t\t\t\t</nav>
@@ -808,6 +789,6 @@ class __TwigTemplate_81f61a4a9c6ca3e3f88bd355871d97e954388e5eaceeb0311bf00bdfbc2
 \t\t\t\t{% block otherJS %}{% endblock %}
 \t\t\t</body>
 \t\t</html>
-", "base_back.html.twig", "C:\\Users\\YoserWalha\\OneDrive\\Bureau\\amtlearning-meeting2\\templates\\base_back.html.twig");
+", "base_back.html.twig", "C:\\Users\\YoserWalha\\OneDrive\\Bureau\\casamia\\templates\\base_back.html.twig");
     }
 }
